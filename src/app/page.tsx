@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        Under construction
+        <div>Bruce's 30th</div>
+        <div>Cusco, Peru</div>
+        <div>September 6-8, 2024</div>
       </div>
     </main>
   );
