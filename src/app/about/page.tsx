@@ -10,6 +10,7 @@ export default function About() {
         <div className={styles.contentText}>
           <div><TextShadow color="green">About {`[Under Construction]`}</TextShadow></div>
         </div>
+        <span>Sorry! I'm still working on this hehe</span>
         <TextButton href="/schedule">See the itinerary</TextButton>
       </div>
     </main>

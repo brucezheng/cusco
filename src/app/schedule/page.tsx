@@ -8,6 +8,7 @@ export default function About() {
         <div className={styles.contentText}>
           <div><TextShadow color="green">Schedule {`[Under Construction]`}</TextShadow></div>
         </div>
+        <span>Sorry! I'm still working on this hehe</span>
       </div>
     </main>
   );
