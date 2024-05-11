@@ -6,9 +6,7 @@
   align-items: flex-start;
   padding: 6rem;
   min-height: 100vh;
-  background-image: url('/banner.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #9CAFAA;
   font-size: 48px;
 }
 
@@ -50,7 +48,7 @@
 }
 
 .button:hover {
-  border-color: transparent;
+  border-color: hsl(214, 38%, 34%);
   background-color: #fff;
   color: hsl(214, 38%, 34%);
   text-shadow: 1px 1px 2px white;
