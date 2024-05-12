@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { TextShadow } from "../components/textShadow/TextShadow";
+import { TextShadow } from "../../components/textShadow/TextShadow";
 
 export default function About() {
   return (

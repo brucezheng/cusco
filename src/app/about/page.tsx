@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import styles from "./page.module.css";
-import { TextShadow } from "../components/textShadow/TextShadow";
-import { TextButton } from "../components/textButton/textButton";
+import { TextShadow } from "../../components/textShadow/TextShadow";
+import { TextButton } from "../../components/textButton/textButton";
 
 export default function About() {
   return (
