@@ -29,7 +29,7 @@ const FAQ_CONTENT = [
   ],
   [
     "Where are we staying?",
-    "I'm planning on renting at least one AirBnB to host people who are coming as well as to serve as an event space. I want to be able to accommodate everyone and make sure they are comfortable, and I will be booking something that typically is 'nicer' that what I would do by myself (since you may know that my standards are somewhat low)."
+    "I'm planning on renting at least one AirBnB to host people who are coming as well as to serve as an event space. I want to be able to accommodate everyone and make sure they are comfortable, and I will be booking something that typically is 'nicer' that what I would do by myself (since you may know that my standards are somewhat low). If you would like to arrange your own stay, you're obviously welcome to do that, but just reach out to me to make sure it's not too far from where we are staying."
   ],
   [
     "Are we going to Machu Picchu?",
@@ -60,10 +60,10 @@ export default function About() {
         </div> */}
         <div className={styles.faqContent}>
           {FAQ_CONTENT.map((entry, index) => 
-            <Card key={index} width="360px">
+            <Card key={index} width="var(--card-size)">
               <div className={styles.faqSubtitle}>
                 {entry[0]}
-              </div>
+              </div>  
               <div className={styles.bodyText}>
                 {entry[1]}
               </div>
