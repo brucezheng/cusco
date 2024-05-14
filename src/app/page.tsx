@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import { TextShadow } from "@/components/textShadow/TextShadow";
-import { TextButton } from "@/components/textButton/textButton";
+import { TextButton } from "@/components/textButton/TextButtonButton";
 
 const RSVP_LINK = "https://forms.gle/BrtkuYS6Tqhhvi1g8";
 
