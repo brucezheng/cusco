@@ -18,8 +18,18 @@
   transition: border-color 0.3s ease-out;
 }
 
+.textButton[data-disabled="true"] {
+  color: rgba(200,200,200,1);
+  border-color: rgba(200,200,200,1);
+  cursor: default;
+}
+
 .textButton:hover {
   border-color: transparent;
+}
+
+.textButton[data-disabled="true"]:hover {
+  border-color: rgba(200,200,200,1);
 }
 
 .textButtonGap {

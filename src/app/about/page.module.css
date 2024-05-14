@@ -25,6 +25,37 @@
   color: var(--text-color);
 }
 
+.subtitle {
+  font-family: var(--font-serif);
+  line-height: 1.25;
+  color: var(--text-color);
+  font-size: 36px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.bodyText {
+  font-family: var(--font-serif);
+  line-height: 1.25;
+  color: black;
+  font-size: 15px;
+}
+
+.faqSubtitle {
+  font-family: var(--font-serif);
+  line-height: 1.25;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1.5px solid #9CAFAA;
+}
+
+.faqContent {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .button {
   display: flex;
   background-color: rgba(1,1,1,0.01);
