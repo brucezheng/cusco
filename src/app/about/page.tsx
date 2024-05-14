@@ -36,7 +36,7 @@ const FAQ_CONTENT = [
   ],
   [
     "Can I stay longer?",
-    "Definitely. I myself will stay for at least a week in Cusco (tentatively Aug 30 through Sep 8). I will be planning to do more fun things and also working remotely a bit. Those things will be more loosely planned since I'm not expecting many people to be there, but I would love it if you could join!"
+    "Definitely. I myself will stay for at least a week in Cusco (tentatively Aug 31 through Sep 12). I will be planning to do more fun things and also working remotely a bit. Those things will be more loosely planned since I'm not expecting many people to be there, but I would love it if you could join!"
   ],
   [
     "Can I bring someone else?",
