@@ -50,7 +50,7 @@ export default function About() {
     <main className={styles.main}>
       <div className={styles.content}>
         <div className={styles.contentText}>
-          <div><TextShadow color="green">About</TextShadow></div>
+          <div><TextShadow color="green">Questions</TextShadow></div>
         </div>
         {/* <div className={styles.subtitle}>
           What are we doing?
@@ -58,9 +58,6 @@ export default function About() {
         <div className={styles.subtitle}>
           Other Questions
         </div> */}
-        <div className={styles.subtitle}>
-          Other Questions
-        </div>
         <div className={styles.faqContent}>
           {FAQ_CONTENT.map((entry, index) => 
             <Card key={index} width="360px">
