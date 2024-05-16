@@ -1,7 +1,9 @@
 import styles from "./page.module.css";
 import { TextShadow } from "@/components/textShadow/TextShadow";
 import { TextButton } from "@/components/textButton/TextButton";
-import { Card } from "@/components/card/Card";
+import { Card, CardProps } from "@/components/card/Card";
+import { CardCarousel } from "@/components/cardCarousel/CardCarousel";
+import { ReactNode } from "react";
 
 const RSVP_LINK = "https://forms.gle/BrtkuYS6Tqhhvi1g8";
 
@@ -44,19 +46,41 @@ const FAQ_CONTENT = [
   ],
 ];
 
+const CARDS: Array<CardProps> = [
+  {
+    children: <MainCardContent emoji="🏔️">We're going on an adventure together! And in my opinion, adventure requires some effort, and some getting outside of your comfort zone.</MainCardContent>,
+  },
+  {
+    children: <MainCardContent emoji="🏠">I have been the beneficiary of many of y'all's hospitality, so now is the time to return the favor! This is my opportunity to host all my friends!</MainCardContent>,
+  },
+  {
+    children: <MainCardContent emoji="📖">We're going to dig into the word. Yup. Expect at least 4 hours of intense bible study. This is not a joke. That's what I want to do for my birthday.</MainCardContent>,
+  },
+  {
+    children: <MainCardContent emoji="🍲">We'll break bread! Many yummy meals are planned, including a trip to <u>Green Point Cusco</u>, which was voted <u>Tripadvisor's Hidden Gem of 2022</u>.</MainCardContent>,
+  },
+  {
+    children: <MainCardContent emoji="📸">We'll make art! Specifically, I will be tasking each of you with taking pictures with a disposable camera. At the end of the trip, I'll compile the pictures into a published book which I will send to each of you.</MainCardContent>,
+  },
+  {
+    children: <MainCardContent emoji="🎉">I love connecting my friends to each other, so put on your outgoing hat and your extraverted hat. I hope that each of you leaves this event with a new friend!</MainCardContent>,
+  },
+]
+
 export default function About() {
   return (
     <main className={styles.main}>
       <div className={styles.content}>
         <div className={styles.contentText}>
-          <div><TextShadow color="green">Questions</TextShadow></div>
-        </div>
-        {/* <div className={styles.subtitle}>
-          What are we doing?
+          <div><TextShadow color="green">About</TextShadow></div>
         </div>
         <div className={styles.subtitle}>
+          What are we doing?
+        </div>
+        <CardCarousel cards={CARDS} /> 
+        <div className={styles.subtitle}>
           Other Questions
-        </div> */}
+        </div>
         <div className={styles.faqContent}>
           {FAQ_CONTENT.map((entry, index) => 
             <Card key={index} width="var(--card-size)">
@@ -74,4 +98,16 @@ export default function About() {
       </div>
     </main>
   );
+}
+
+interface MainCardContentProps {
+  emoji: string;
+  children?: ReactNode;
+}
+
+function MainCardContent({emoji, children}: MainCardContentProps) {
+  return <div className={styles.mainCard}>
+    <div className={styles.mainCardEmoji}><div>{emoji}</div></div>
+    <div className={styles.mainCardBody}><div>{children}</div></div>
+  </div>
 }

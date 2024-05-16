@@ -3,9 +3,10 @@ import styles from "./card.module.css";
 
 export interface CardProps {
   children?: ReactNode;
-  width: string;
+  width?: string;
+  height?: string;
 }
 
-export function Card({children, width}: CardProps) {
-  return <div style={{width}} className={styles.card}>{children}</div>
+export function Card({children, width, height}: CardProps) {
+  return <div style={{width, height}} className={styles.card}>{children}</div>
 }

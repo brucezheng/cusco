@@ -1,3 +1,12 @@
 .cardCarousel {
-  width: min(750px, 100%);
+  width: 100%;
+  position: relative;
+  height: 300px;
+  margin: 12px 0;
+}
+
+.carouselItem {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, filter 1s;
+  cursor: pointer;
 }
